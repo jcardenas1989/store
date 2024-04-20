@@ -10,7 +10,7 @@ import {ProductComponent} from './../../components/product/product.component';
   styleUrl: './list.component.css'
 })
 export class ListComponent {
-
+// una prueba de cargue en github
 fromChild(event: string){
   console.log("estamos en el padre");
   console.log(event);
