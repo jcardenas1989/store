@@ -1,9 +1,12 @@
 <div>
-    <div #wave></div>
-    <button (click)="playPuse()" >play Pause
-       <span *ngIf="isPlaying(); else elseBlock">Puse</span>
-       <ng-template #elseBlock>Play</ng-template>
-       
-    </button>
+  <div #wave></div>
+  <button (click)="playPuse()" >play Pause
+    @if (isPlaying()) {
+      <span>Puse</span>
+    } @else {
+      Play
+    }
+
+  </button>
 </div>
 
